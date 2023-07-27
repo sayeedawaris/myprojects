@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width initial-scale=1">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Form</title>
+</html>
+<body>
+<style>
+    body{ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif }
+    
+    body,html{
+        margin:0;
+        height: 100%;
+    }
+.bg-img {
+  background-image: url("back.img");
+  height: 100%;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 10px;
+  margin: 0;
+}
+input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid rgb(117, 114, 114);
+         box-sizing: border-box;
+ }
+.forms{
+    border: 1px solid;
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+    background-color: rgb(99, 127, 153);
+    border-radius: 30px;
+}
+ button{
+    background-color: rgb(47, 54, 75);
+    color: white;
+    padding: 14px 20px;
+    width: 100%;
+    margin: 2px;
+    cursor: pointer;
+    border: none;
+    text-decoration: underline;
+    color: black;
+ }
+ .container{
+    padding: 16px;
+ }
+ .span.psw {
+  float: right;
+  padding-top: 16px;
+}
+button:hover {
+  opacity: 0.8;
+}
+.cancelbtn {
+  width: auto;
+  padding: 10px 30px;
+  background-color: #df2d2d;
+  margin-right: 60%;
+  border-radius: 10px;
+}
+.container {
+  padding: 16px;
+border-radius: 20px;
+}
+.heading{
+    text-decoration: underline;
+    text-align: center;
+    font-family: cursive;
+}
+.pass {
+    text-align: left;
+    font-size: 140%;
+    text-decoration: underline;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.user {
+    text-align: left;
+    font-size: 140%;
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+</style>
+<div class="bg-img">
+    <form action="/action_page.php" class="container">
+</head>
+<body>
+ <div class="forms">
+ <div class="img">
+ <img src="imagees.png" alt="girl" height="200px" >
+ </div>
+ <div class="heading">
+ <h1>Welcome!<br>Enter your details </h1>
+</div>
+<form action="/action_page.php" method="post"></form>
+<div class="user">
+ <label for="uname">Username:</label><br>
+ <input type="text" placeholder="Enter Username" name="uname" required><br>
+ </div>
+ <div class="pass">
+ <label for="psw">Password:</label><br>
+ <input type="text" placeholder="Enter Password" name="psw"><br>
+ </div>
+ <div class="login">
+<button type="submit">Login</button>
+</div>
+<div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+ </form>
+ </div>
+</body>
+<style>
+    img{
+        position: relative; left: 1%; 
+        border-radius: 50%;
+    }
+    .forms{
+        text-align: center;
+        font-family: cursive;
+    }
+</style>
+</html>
